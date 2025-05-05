@@ -1,12 +1,16 @@
 import { StyleSheet, Text, View,Image } from 'react-native'
 import React from 'react'
 import logo from '../assets/favicon.png'
+import {Link} from 'expo-router'
 const Home = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home</Text>
       <Text style={[styles.paragraph,{color:'green'}]}>title of home</Text>
       <Image source={logo} style={{width:"100",height:"100"}}/>
+
+      <Link href="/about" style={styles.links}>About it </Link>
+      <Link href="/contact" style={styles.links}>Contact </Link>
     </View>
   )
 }
@@ -30,7 +34,13 @@ const styles = StyleSheet.create({
         fontSize:25,
         fontWeight:'bold',
         color:'red'
-    }
+    },
+
+    links:{
+        marginTop:20,
+        fontSize:30,
+        borderBottomWidth:1,
+       }
 
 
 
