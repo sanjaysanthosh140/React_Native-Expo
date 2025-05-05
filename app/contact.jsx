@@ -6,7 +6,7 @@ const contact = () => {
     <View style={styles.container}>
       <Text style={styles.title}>contact</Text>
       <Text style={styles.paragraph}> This is Contact File</Text>
-      <Link style={styles.links} href="/">Home</Link>
+      <Link  href="/" style={styles.links}>Home</Link>
     </View>
   )
 }
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         color:'red'
     },
-    links:{
+    links:{ 
         marginTop:20,
         fontSize:30,
         borderBottomWidth:1
