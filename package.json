@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
+    "date-fns": "^4.1.0",
     "expo": "~53.0.7",
     "expo-constants": "~17.1.5",
     "expo-linking": "~7.1.4",
@@ -18,11 +19,15 @@
     "nodemon": "^3.1.10",
     "react": "19.0.0",
     "react-native": "0.79.2",
+    "react-native-flash-message": "^0.4.2",
+    "react-native-paper": "^5.14.0",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.10.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@types/react": "~19.0.10",
+    "typescript": "~5.8.3"
   },
   "private": true
 }

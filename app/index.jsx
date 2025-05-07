@@ -1,16 +1,20 @@
-import { StyleSheet, Text, View,Image } from 'react-native'
+import { StyleSheet, Text, View,Image, useColorScheme } from 'react-native'
 import React from 'react'
 import logo from '../assets/favicon.png'
 import {Link} from 'expo-router'
+import colors from '../contstants/Colours'
 const Home = () => {
+  const theme = useColorScheme()
+    const colourthem = theme === 'dark' ? colors.dark : colors.light
   return (
-    <View style={styles.container}>
+    <View style={[styles.container,{backgroundColor:colourthem.background}]}>
       <Text style={styles.text}>Home</Text>
       <Text style={[styles.paragraph,{color:'green'}]}>title of home</Text>
       <Image source={logo} style={{width:"100",height:"100"}}/>
 
       <Link href="/about" style={styles.links}>About it </Link>
       <Link href="/contact" style={styles.links}>Contact </Link>
+      <Link href={'/data'} style={styles.links}>add work</Link>
     </View>
   )
 }
